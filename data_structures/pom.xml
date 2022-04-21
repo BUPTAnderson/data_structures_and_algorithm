@@ -17,15 +17,30 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <air.main.basedir>${project.basedir}</air.main.basedir>
         <air.check.fail-checkstyle>true</air.check.fail-checkstyle>
-        <air.check.skip-checkstyle>false</air.check.skip-checkstyle>
+        <air.check.skip-checkstyle>true</air.check.skip-checkstyle>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.rocksdb</groupId>
+            <artifactId>rocksdbjni</artifactId>
+            <version>6.20.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.coral</groupId>
+            <artifactId>coral-trino</artifactId>
+            <version>1.0.46</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.16</version>
         </dependency>
     </dependencies>
     <build>

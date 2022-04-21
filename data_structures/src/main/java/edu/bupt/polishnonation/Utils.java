@@ -34,7 +34,7 @@ public class Utils {
 
   }
 
-  public static Integer process(Stack<Integer> operandStack, char operator) {
+  public static Integer processRev(Stack<Integer> operandStack, char operator) {
     Integer p2 = operandStack.pop();
     Integer p1 = operandStack.pop();
     switch (operator) {
@@ -49,7 +49,23 @@ public class Utils {
       default:
         throw new IllegalArgumentException();
     }
+  }
 
+  public static Integer process(Stack<Integer> operandStack, char operator) {
+    Integer p1 = operandStack.pop();
+    Integer p2 = operandStack.pop();
+    switch (operator) {
+      case '+':
+        return p1 + p2;
+      case '-':
+        return p1 - p2;
+      case '*':
+        return p1 * p2;
+      case '/':
+        return p1 / p2;
+      default:
+        throw new IllegalArgumentException();
+    }
   }
 
   public static int priority(char c) {

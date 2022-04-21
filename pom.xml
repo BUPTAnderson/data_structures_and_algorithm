@@ -18,30 +18,35 @@
         </plugins>
     </build>
     <modules>
-    <module>data_structures</module>
-    <module>leetcode</module>
-  </modules>
-  <packaging>pom</packaging>
+        <module>data_structures</module>
+        <module>leetcode</module>
+    </modules>
+    <packaging>pom</packaging>
 
-  <name>data_structures_and_algorithm</name>
-  <url>http://maven.apache.org</url>
+    <name>data_structures_and_algorithm</name>
+    <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-  <dependencies>
-      <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
-      <dependency>
-          <groupId>com.googlecode.json-simple</groupId>
-          <artifactId>json-simple</artifactId>
-          <version>1.1.1</version>
-      </dependency>
-      <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.16</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
